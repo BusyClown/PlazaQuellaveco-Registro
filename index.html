@@ -2,28 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <title>Plaza Quellaveco</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <header>
-
+    <header class="myAnim">
         <div id="logo" class="logo">
             <img src="src/images/logoAngloamerica.svg" alt="logoAnglo" id="logoAnglo" class="logoAnglo">
         </div>
-
     </header>
 
-    <main id="main" class="app myAnim">
-        <div>
-            <section>
+    <main id="app" class="app myAnim">
+        <div id="superior">
+            <section id="marcoContainer">
                 <div id="marco" class="marco myAnim">
                     <div id="logoConteiner">
-                        <img src="src/images/fiestaQuellaveco.png" alt="logoEvent" id="logoEvent" class="logoEvent">
+                        <img src="src/images/plaza.png" alt="logoEvent" id="logoEvent" class="logoEvent">
                     </div>
                 </div>
             </section>
@@ -34,15 +33,12 @@
                 <div id="registration" >
                     <div id="form-container">
                         <form method="post" id="registrationForm">
-                            
-                            <h2>BIENVENIDO</h2>
-                
                             <div id="form-group">
-                                <input type="text" id="dni" name="dni" required placeholder="DNI/CARNÉ DE EXTRANJERÍA">
-                                <input type="text" id="company" name="company" required placeholder="EMPRESA">
+                                <h1>Edición Innovación y Tecnología</h1>
+                                <input type="text" id="dni" class="btn" name="dni" required placeholder="DNI/CARNÉ DE EXTRANJERÍA">
+                                <input type="text" id="company" class="btn" name="company" required placeholder="EMPRESA">
                                 <button type="submit">REGISTRARSE</button>
                             </div>
-                
                         </form>
                     </div>
                 </div>
